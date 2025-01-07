@@ -14,7 +14,7 @@ exports.createOrder=async (req,res,next)=>{
         product.stock = product.stock - item.qty;
         await product.save();
     })
-
+ //change to check git 
     res.json({
         success:true,
         order,
